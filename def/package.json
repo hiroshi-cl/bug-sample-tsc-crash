@@ -1,0 +1,26 @@
+{
+  "name": "@local/def",
+  "version": "0.0.0",
+  "description": "def",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "devDependencies": {
+    "monet": "0.8.10",
+    "typescript": "2.1.4"
+  },
+  "peerDependencies": {
+    "monet": "^0.8.10",
+    "typescript": "^2.1.4"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsc -p .",
+    "publishLocal": "npm install -g . monet"
+  },
+  "license": "MIT",
+  "files": [
+    "package.json",
+    "README.md",
+    "dist"
+  ]
+}

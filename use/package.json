@@ -1,0 +1,20 @@
+{
+  "name": "@local/use",
+  "version": "0.0.0",
+  "description": "use",
+  "devDependencies": {
+    "monet": "0.8.10",
+    "typescript": "2.1.4"
+  },
+  "scripts": {
+    "postinstall": "npm link @local/def",
+    "clean": "rm -rf dist",
+    "build": "tsc -p ."
+  },
+  "license": "MIT",
+  "files": [
+    "package.json",
+    "README.md",
+    "dist"
+  ]
+}
